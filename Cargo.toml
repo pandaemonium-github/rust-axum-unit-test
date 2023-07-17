@@ -1,0 +1,19 @@
+[package]
+name = "rust-axum-unit-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.18"
+axum-macros = "0.3.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0.103"
+tokio = {version= "1.29.1", features=["full"]}
+
+[dev-dependencies]
+hyper = "0.14.27"
+mockall = "0.11.4"
+rstest = "0.18.1"
+tower = "0.4.13"
